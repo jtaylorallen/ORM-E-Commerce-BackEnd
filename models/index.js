@@ -1,13 +1,14 @@
 // import models
-import Product, { belongsTo, belongsToMany } from './Product';
-import Category from './Category';
-import Tag, { belongsToMany as _belongsToMany } from './Tag.js';
-import ProductTag from './ProductTag';
+const Product = require('./Product');
+const Category = require('./Category');
+const Tag = require('./Tag');
+const ProductTag = require('./ProductTag');
 // const router = require('ORM-E-Commerce-BackEnd/routes/api/category-routes.js');
 
 // Products belongsTo Category
 belongsTo(Category, {
   foreignKey: 'category_id'
+  //delete?
 });
 
 // Categories have many Products
@@ -27,7 +28,7 @@ _belongsToMany(Product, {
   foreignKey: 'tag-id'
 });
 
-export default {
+module.export = {
   Product,
   Category,
   Tag,
