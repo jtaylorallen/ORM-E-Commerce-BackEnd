@@ -2,12 +2,12 @@
 const Product = require('./Product');
 const Category = require('./Category');
 const Tag = require('./Tag');
-const ProductTag = require('./ProductTag');
+const ProductTag = require('./ProductTag').default;
 // const router = require('ORM-E-Commerce-BackEnd/routes/api/category-routes.js');
 
 // Products belongsTo Category
-belongsTo(Category, {
-  foreignKey: 'category_id'
+Product.belongsTo(Category, {
+  foreignKey: 'category_id',
   //delete?
 });
 
@@ -17,13 +17,13 @@ Category.hasMany(Product, {
 });
 
 // Products belongToMany Tags (through ProductTag)
-belongsToMany(Tag, {
+Product.belongsToMany(Tag, {
   through: ProductTag,
   foreignKey: 'product_id'
 });
 
 // Tags belongToMany Products (through ProductTag)
-_belongsToMany(Product, {
+Tag.belongsToMany(Product, {
   through: ProductTag,
   foreignKey: 'tag-id'
 });
