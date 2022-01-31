@@ -1,6 +1,6 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('express').Router();
 
-const sequelize = require('../ORM-E-Commerce-BackEnd/config/connection.js');
+import sequelize from '../ORM-E-Commerce-BackEnd/config/connection.js';
 
 class Category extends Model {}
 
@@ -28,4 +28,4 @@ Category.init(
   }
 );
 
-module.exports = Category;
+export default Category;
