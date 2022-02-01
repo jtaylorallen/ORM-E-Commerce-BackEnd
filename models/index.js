@@ -2,7 +2,7 @@
 const Product = require('./Product');
 const Category = require('./Category');
 const Tag = require('./Tag');
-const ProductTag = require('./ProductTag').default;
+const ProductTag = require('./ProductTag');
 // const router = require('ORM-E-Commerce-BackEnd/routes/api/category-routes.js');
 
 // Products belongsTo Category
