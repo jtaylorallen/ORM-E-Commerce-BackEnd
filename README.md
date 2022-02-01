@@ -15,7 +15,7 @@
 
 ## Quick Links
 
-- click here to view --> [final website](https://drive.google.com/file/d/1KFdk4PQPgWFedW_DQo-6Vb7y9J1VHmZj/view)
+- click here to view --> [final website]()
 
 - click here to view --> [README GUIDE from UT](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-VIRT-FSF-FT-06-2021-U-LOL/blob/master/01-HTML-Git-CSS/02-Homework/Homework-Guide/README.md)
 
@@ -33,6 +33,7 @@
 ## Bugs and Known Issues
 
 - I personally had a lot of trouble with npm start in the beginning of the project. 
+- I perfer postman to insomia
 
 
 ## Next Steps to Continue
